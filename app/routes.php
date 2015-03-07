@@ -401,7 +401,7 @@ Route::when('movimentos*', 'auth');
 |--------------------------------------------------------------------------
 */
 Route::get('settings/reset', array('uses' => 'SettingsController@reset'));
-Route::resource('settings', 'settingsController');
+Route::resource('settings', 'SettingsController');
 Route::when('settings*', 'auth');
 
 
